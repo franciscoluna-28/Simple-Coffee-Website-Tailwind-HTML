@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./dist/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://kit.fontawesome.com/d5a98b8c2b.js" crossorigin="anonymous"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="">
+    <header
+      class="bg-white sticky hidden sm:flex top-0 shadow-sm w-full h-16 justify-center z-50 border-b"
+    >
+      <ul class="flex items-center gap-16">
+        <a href="#main"><li class="headerLink">home</li></a>
+        <a href="#contact"><li class="headerLink">contact</li></a>
+        <a href="#about"><li class="headerLink">about</li></a>
+        <a href="#find-us"><li class="headerLink">find us</li></a>
+
+        <li
+          class="headerLink bg-amber-600 border p-2 px-4 rounded-full !text-white hover:bg-transparent hover:!border-amber-600 border-transparent duration-200 hover:!text-amber-600 !no-underline"
+        >
+          <a href="#products">Purchase Products</a>
+        </li>
+      </ul>
+    </header>
+    <main class="">
+      <section class="flex w-full items-center max-w-full text-center py-8 px-8" id="main">
+        <div class="flex flex-col w-full space-y-4">
+          <h1
+            class="w-full text-6xl font-bold uppercase font-Bebas-Neue text-black"
+          >
+            UBA Coffee
+          </h1>
+          <span
+            class="w-full font-medium uppercase text-4xl font-Bebas-Neue text-amber-600"
+            >Taste the Difference</span
+          >
+          <p class="text-slate-500 font-Bebas-Neue">
+            Get started today by ordering one of our products for free!
+          </p>
+          <div class="w-full flex justify-center lg:justify-start">
+          <a href="#products"
+            class="bg-amber-600 border p-2 px-4 rounded-full !text-white hover:bg-transparent hover:!border-amber-600 border-transparent duration-200 hover:!text-amber-600 !no-underline max-w-[200px] font-medium !mt-4"
+          >
+            Order Now <i class="fa-solid fa-mug-saucer ml-1"></i>
+          </a>
+        </div>
+        </div>
+        <div class="container max-w-lg max-h-full relative justify-start hidden lg:flex">
+          <div
+            class="hdden lg:!absolute h-[500px] z-40 rounded-full w-[500px] translate-y-6 bg-red-500 lg:!opacity-5 overflow-hidden"
+          ></div>
+          <img alt="Coffee image" src="../resources/coffee.png" />
+        </div>
+      </section>
+
+      <section class="my-16">
+        <h2
+          class="font-Bebas-Neue text-4xl font-bold text-center mb-2 uppercase"
+        >
+          Best Sellers
+        </h2>
+        <span
+          class="text-center flex justify-center mb-8 text-lg font-Bebas-Neue text-amber-600"
+          >See our best products</span
+        >
+        <div
+          id="default-carousel"
+          class="relative w-full"
+          data-carousel="slide"
+        >
+          <!-- Carousel wrapper -->
+          <div class="relative h-56 overflow-hidden rounded-lg md:h-96 ">
+            <!-- Item 1 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
+                src="../resources/coffee-2.jpg"
+                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                alt="..."
+              />
+            </div>
+            <!-- Item 2 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
+                src="../resources/coffee-3.jpg"
+                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                alt="..."
+              />
+            </div>
+          </div>
+          <!-- Slider indicators -->
+          <div
+            class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2"
+          >
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="true"
+              aria-label="Slide 1"
+              data-carousel-slide-to="0"
+            ></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 2"
+              data-carousel-slide-to="1"
+            ></button>
+          </div>
+          <!-- Slider controls -->
+          <button
+            type="button"
+            class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-prev
+          >
+            <span
+              class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+            >
+              <svg
+                class="w-4 h-4 text-white dark:text-gray-800"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 6 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5 1 1 5l4 4"
+                />
+              </svg>
+              <span class="sr-only">Previous</span>
+            </span>
+          </button>
+          <button
+            type="button"
+            class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-next
+          >
+            <span
+              class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+            >
+              <svg
+                class="w-4 h-4 text-white dark:text-gray-800"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 6 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m1 9 4-4-4-4"
+                />
+              </svg>
+              <span class="sr-only">Next</span>
+            </span>
+          </button>
+        </div>
+      </section>
+
+      <section class="my-16 px-8 lg:px-16" id="products">
+        <h2
+          class="font-Bebas-Neue text-4xl font-bold text-center mb-2 uppercase"
+        >
+          Products
+        </h2>
+        <span
+          class="text-center flex justify-center mb-8 text-lg font-Bebas-Neue text-amber-600"
+          >See our Catalog</span
+        >
+
+        <div class="flex gap-8 flex-col lg:flex-row justify-center m-auto items-center">
+          <article class="bg-white shadow-sm max-w-sm border rounded-xl hover:shadow-md duration-200">
+            <img class="h-48 w-fit m-auto" src="../resources/capuccino.png" />
+            <div class="p-4">
+              <div class="flex flex-col">
+                <h2
+                  class="font-bold font-Bebas-Neue text-3xl uppercase leading-normal"
+                >
+                  Cuban Capuccino
+                </h2>
+                <span class="text-amber-600 border rounded-xl block mt-2 border-amber-600 px-2 w-auto max-w-fit">0.99$</span>
+              </div>
+              <p class="text-gray-500 mt-2 leading-loose">
+                Taste the tropics for $0.99! Would you like to try this Cuban Capuccino?
+              </p>
+              <button
+                class="bg-amber-600 border p-2 px-4 rounded-full !text-white hover:bg-transparent hover:!border-amber-600 border-transparent duration-200 hover:!text-amber-600 !no-underline max-w-[200px] mt-4 font-medium"
+              >
+                Order Now <i class="fa-solid fa-cart-shopping ml-1"></i>
+              </button>
+            </div>
+          </article>
+          <article class="bg-white shadow-sm max-w-sm border rounded-xl hover:shadow-md duration-200">
+            <img class="h-48 w-fit" src="../resources/coffee-promotion.png" />
+            <div class="p-4">
+              <div class="flex flex-col">
+                <h2
+                  class="font-bold font-Bebas-Neue text-3xl uppercase leading-normal"
+                >
+                  Brown Coffee
+                </h2>
+                <span class="text-amber-600 border rounded-xl block mt-2 border-amber-600 px-2 w-auto max-w-fit">0.99$</span>
+              </div>
+              <p class="text-gray-500 mt-2 leading-loose">
+                Brew up your morning for $0.99! An amazing way to start your day.
+              </p>
+              <button
+                class="bg-amber-600 border p-2 px-4 rounded-full !text-white hover:bg-transparent hover:!border-amber-600 border-transparent duration-200 hover:!text-amber-600 !no-underline max-w-[200px] mt-4 font-medium"
+              >
+                Order Now <i class="fa-solid fa-cart-shopping ml-1"></i>
+              </button>
+            </div>
+          </article>
+          <article class="bg-white shadow-sm max-w-sm border rounded-xl hover:shadow-md duration-200">
+            <img
+              class="h-48 w-fit m-auto"
+              src="../resources/coffee-ice-cream.png"
+            />
+            <div class="p-4">
+              <div class="flex flex-col">
+                <h2
+                  class="font-bold font-Bebas-Neue text-3xl uppercase leading-normal"
+                >
+                  Coffee Ice Cream
+                </h2>
+                <span class="text-amber-600 border rounded-xl block mt-2 border-amber-600 px-2 w-auto max-w-fit">0.99$</span>
+              </div>
+              <p class="text-gray-500 mt-2 leading-loose">
+                Taste the coffee, love the ice cream for $0.99! What's better than a coffee ice cream?
+              </p>
+              <button
+                class="bg-amber-600 border p-2 px-4 rounded-full !text-white hover:bg-transparent hover:!border-amber-600 border-transparent duration-200 hover:!text-amber-600 !no-underline max-w-[200px] mt-4 font-medium"
+              >
+                Order Now <i class="fa-solid fa-cart-shopping ml-1"></i>
+              </button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" >
+        <h2
+          class="font-Bebas-Neue text-4xl font-bold text-center mb-2 uppercase"
+        >
+          about us
+        </h2>
+        <span
+          class="text-center flex justify-center mb-8 text-lg font-Bebas-Neue text-amber-600"
+          >Learn about the company</span
+        >
+
+        <div class="px-8 m-auto max-w-[1050px]">
+        <p class="leading-loose text-slate-500 font-Bebas-Neue mb-4">At UBA Coffee, we believe that coffee is more than just a drink. It's a way to start your day off right, to connect with friends, and to take a moment to appreciate the simple things in life. That's why we're committed to serving you the best possible cup of coffee, made with the freshest beans and roasted to perfection.
+
+          We've been in the business for over 10 years, and we've learned a thing or two about coffee. We know how to source the best beans, how to roast them perfectly, and how to brew them to perfection. We also know that everyone likes their coffee differently, so we offer a wide variety of drinks to choose from, whether you're a fan of classic black coffee or something more adventurous.
+          
+          But we're more than just a coffee shop.</p>
+      
+    
+          <div
+          id="default-carousel "
+          class="relative w-full h-full"
+          data-carousel="slide"
+        >
+          <!-- Carousel wrapper -->
+          <div class="relative overflow-hidden rounded-lg md:h-96">
+            <!-- Item 1 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
+                src="../resources/coffee-people.jpg"
+                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                alt="..."
+              />
+            </div>
+            <!-- Item 2 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
+                src="../resources/coffee-people-2.jpg"
+                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                alt="..."
+              />
+            </div>
+          </div>
+          <!-- Slider indicators -->
+          <div
+            class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2"
+          >
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="true"
+              aria-label="Slide 1"
+              data-carousel-slide-to="0"
+            ></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 2"
+              data-carousel-slide-to="1"
+            ></button>
+          </div>
+          <!-- Slider controls -->
+          <button
+            type="button"
+            class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-prev
+          >
+            <span
+              class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+            >
+              <svg
+                class="w-4 h-4 text-white dark:text-gray-800"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 6 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5 1 1 5l4 4"
+                />
+              </svg>
+              <span class="sr-only">Previous</span>
+            </span>
+          </button>
+          <button
+            type="button"
+            class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-next
+          >
+            <span
+              class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+            >
+              <svg
+                class="w-4 h-4 text-white dark:text-gray-800"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 6 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m1 9 4-4-4-4"
+                />
+              </svg>
+              <span class="sr-only">Next</span>
+            </span>
+          </button>
+        </div>      
+ 
+      </div>
+      </section>
+
+      <section class="px-8 lg:px-16" id="find-us">
+        <h2
+        class="font-Bebas-Neue text-4xl font-bold text-center mb-2 uppercase mt-16"
+      >
+        Find Us
+      </h2>
+      <span
+        class="text-center flex justify-center mb-8 text-lg font-Bebas-Neue text-amber-600"
+        >Our Stores Around the World</span
+      >
+      <div class="flex flex-col md:flex-row justify-center items-center gap-4">
+        <article class="bg-white shadow-sm max-w-xs border rounded-xl hover:shadow-md duration-200">
+          <img alt="Store 1" src="../resources/sede-1.jpg" class="max-h-64 w-fit rounded-t-xl">
+          <div class="p-4">
+            <h3 class="font-bold text-2xl font-Bebas-Neue">London</h3>
+            <span class="text-amber-600 border rounded-xl block mt-2 border-amber-600 px-2 w-auto max-w-fit">123 Oxford Street</span>
+            <p class="text-slate-500 mt-4">Find us near the Oxford Circus tube station, we're open 7 days a week.</p>
+          </div>
+        </article>
+        <article class="bg-white shadow-sm max-w-xs border rounded-xl hover:shadow-md duration-200">
+          <img alt="Store 2" src="../resources/sede-2.jpg" class="max-h-64 w-fit rounded-t-xl">
+          <div class="p-4">
+            <h3 class="font-bold text-2xl font-Bebas-Neue">New York</h3>
+            <span class="text-amber-600 border rounded-xl block mt-2 border-amber-600 px-2 w-auto max-w-fit">456 Times Square</span>
+            <p class="text-slate-500 mt-4">Visit us in the heart of Times Square, we're open 24 hours a day.</p>
+          </div>
+        </article>
+        <article class="bg-white shadow-sm max-w-xs border rounded-xl hover:shadow-md duration-200">
+          <img alt="Store 2" src="../resources/sede-3.jpeg" class="max-h-64 w-fit rounded-t-xl">
+          <div class="p-4">
+            <h3 class="font-bold text-2xl font-Bebas-Neue">Tokyo</h3>
+            <span class="text-amber-600 border rounded-xl block mt-2 border-amber-600 px-2 w-auto max-w-fit">789 Shibuya Crossing</span>
+            <p class="text-slate-500 mt-4">See us at the world-famous Shibuya Crossing, we're open late into the night.</p>
+          </div>
+        </article>
+      </div>
+      
+        </article>
+      </div>
+      </section>
+
+      <section class="mt-16" id="contact">
+        <h2
+        class="font-Bebas-Neue text-4xl font-bold text-center mb-2 uppercase"
+      >
+        Contact us
+      </h2>
+      
+      <span
+        class="text-center flex justify-center mb-8 text-lg font-Bebas-Neue text-amber-600"
+        >Reach out to us</span
+      >
+        <form class="space-y-6 flex flex-col px-8 lg:px-16 max-w-[500px] justify-center m-auto">
+          <input class="border text-sm px-2 p-2 rounded-xl" placeholder="Name and last name" name="fullName">
+          <input class="px-2 border text-sm rounded-xl p-2" placeholder="Email" name="email">
+          <textarea class="border px-2 p-2 text-sm rounded-xl" placeholder="Your message here..." name="message"></textarea>
+          <button id="submitButton"
+          class="bg-amber-600 border p-2 px-4 !mt-6 rounded-xl ring-amber-600 !text-white hover:bg-transparent hover:!border-amber-600 border-transparent duration-200 hover:!text-amber-600 !no-underline max-w-[200px] font-medium"
+        >
+          Send Message
+        </button>
+        </form>
+      </section>
+
+
+
+    </main>
+    <footer class="flex justify-center items-center gap-4 bg-amber-600 text-white p-4 mt-16">
+      <p class="font-medium text-sm">Copyright &copy; 2023 UBA Coffee</p>
+      <a href="#" class="font-medium text-sm">Francisco Luna</a>
+      <a href="#" class="font-medium text-sm">V-30406667</a>
+
+      <div class="bg-white p-4 rounded-full w-20 h-20 md:flex hidden justify-center items-center"
+      >
+    
+
+      <img src="/resources/logo_uba.png" class="w-full h-full" alt="Logo UBA">
+      </div>
+      
+    </footer>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+  <script src="/index.js"></script>
+</html>

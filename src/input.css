@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .headerLink {
+    @apply first-letter:uppercase font-medium text-black text-sm hover:underline cursor-pointer;
+  }
+  .oswald {
+    font-family: "Oswald", sans-serif;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
