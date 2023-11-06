@@ -3,6 +3,8 @@ import { AVAILABLE_COFFEES } from "../database/coffeeInformation";
 import CoffeeCard from "../components/CoffeeCard.astro";
 import CoffeeShopCard from "../components/CoffeeShopCard.astro";
 import { AVAILABLE_SHOPS } from "../database/shopInformation";
+import "../../styles.css"
+import "../../styles/modal.css"
 
 
 
@@ -105,7 +107,7 @@ import { AVAILABLE_SHOPS } from "../database/shopInformation";
         <div class="flex animate__fadeInLeft animate__animated flex-col w-full space-y-4">
           <h1
             
-            class="w-full title-gradient  text-6xl font-bold uppercase font-Bebas-Neue our-text"
+            class="w-full title-gradient z-50 md:text-6xl font-bold uppercase font-Bebas-Neue our-text"
           >
             UBA Coffee
           </h1>

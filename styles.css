@@ -36,7 +36,7 @@ html {
   --bg-size: 400%;
   --color-one: hsl(0, 0%, 7%);
   --color-two: 	hsl(32, 95%, 44%);
-  font-size: clamp(3rem, 25vmin, 8rem);
+  font-size: clamp(3rem, 25vmin, 4rem);
   background: linear-gradient(
       90deg,
       var(--color-one),
