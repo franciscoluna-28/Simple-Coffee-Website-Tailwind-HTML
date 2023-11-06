@@ -1,0 +1,26 @@
+---
+type Props = {
+  city: string;
+  address: string;
+  description: string;
+  imageURL: string;
+};
+
+const { city, address, description, imageURL }: Props = Astro.props;
+---
+
+<article
+  class="bg-white shadow-sm max-w-xs border rounded-xl hover:scale-105 hover:shadow-md duration-200"
+>
+  <img alt="Store 1" src={imageURL} class="max-h-64 w-fit rounded-t-xl" />
+  <div class="p-4">
+    <h3 class="font-bold text-2xl font-Bebas-Neue">{city}</h3>
+    <span
+      class="text-amber-600 border rounded-xl block mt-2 border-amber-600 px-2 w-auto max-w-fit"
+      >{address}</span
+    >
+    <p class="text-slate-500 mt-4">
+      {description}
+    </p>
+  </div>
+</article>

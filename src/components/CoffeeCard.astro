@@ -1,0 +1,38 @@
+---
+// Interfaz para la carta
+type Props = {
+  coffeeName: string;
+  price: number;
+  description: string;
+  imageURL: string;
+};
+
+// Props para renderizar la carta
+const { coffeeName, price, description, imageURL }: Props = Astro.props;
+---
+
+<article
+  class="bg-white shadow-sm max-w-sm border rounded-xl hover:shadow-md
+duration-200 hover:scale-105"
+>
+  <img class="h-48 w-fit m-auto" src={imageURL} alt="Coffee Image" />
+  <div class="p-4">
+    <div class="flex flex-col">
+      <h2 class="font-bold font-Bebas-Neue text-3xl uppercase leading-normal">
+        {coffeeName}
+      </h2>
+      <span
+        class="text-amber-600 border rounded-xl block mt-2 border-amber-600 px-2 w-auto max-w-fit"
+        >{price}</span
+      >
+    </div>
+    <p class="text-gray-500 mt-2 leading-loose">
+      {description}
+    </p>
+    <button
+      class="bg-amber-600 border p-2 px-4 rounded-full !text-white hover:bg-transparent hover:!border-amber-600 border-transparent duration-200 hover:!text-amber-600 !no-underline max-w-[200px] mt-4 font-medium"
+    >
+      Order Now <i class="fa-solid fa-cart-shopping ml-1"></i>
+    </button>
+  </div>
+</article>
