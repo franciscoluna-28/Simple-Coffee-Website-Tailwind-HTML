@@ -7,20 +7,13 @@ import "../../styles.css"
 import "../../styles/modal.css"
 
 
-
 ---
 
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="stylesheet" type="text/css" href="/styles.css" />
-    <link rel="stylesheet" type="text/css" href="/styles/scroll.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="/src/scripts/aos.js"></script>
-    <script src="/src/scripts/scroll.js" defer></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
     rel="stylesheet"
@@ -474,7 +467,13 @@ import "../../styles/modal.css"
       <p class="font-medium text-sm">Copyright &copy; 2023 UBA Coffee</p>
     </footer>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      import AOS from 'aos';
+      import 'aos/dist/aos.css'; // You can also use <link> for styles
+      
+      AOS.init();
+      </script>
+      
   </body>
 
   <script
