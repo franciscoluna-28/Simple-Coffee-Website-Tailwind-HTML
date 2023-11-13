@@ -39,10 +39,12 @@ import "../../styles/modal.css"
   </head>
   <body class="">
     <header
-      class="bg-white sticky hidden sm:flex top-0 shadow-sm w-full h-16 justify-center z-50 border-b"
+      class="bg-white sticky hidden lg:flex top-0 shadow-sm w-full h-16 justify-center z-50 border-b"
     >
       <ul class="flex items-center gap-16">
+        <li class=""><img src="/logo.svg" class="w-36 h-36" alt="UBA Coffee Logo"></li>
         <a href="#main">
+       
           <li class="headerLink">home</li>
         </a>
         <a href="#contact">
@@ -50,6 +52,9 @@ import "../../styles/modal.css"
         </a>
         <a href="#about">
           <li class="headerLink">about</li>
+        </a>
+        <a href="#testimonials">
+          <li class="headerLink">testimonials</li>
         </a>
         <a href="#find-us" <li class="headerLink">find us</a>
         <li
@@ -61,7 +66,7 @@ import "../../styles/modal.css"
     </header>
 
     <nav
-      class="fixed z-50 top-0 sm:hidden shadow-sm flex items-center h-screen"
+      class="fixed z-50 top-0 lg:hidden shadow-sm flex items-center h-screen"
     >
       <label class="hamburger-menu">
         <input type="checkbox" />
@@ -85,6 +90,9 @@ import "../../styles/modal.css"
             </a>
             <a href="#products" class="nav-link">
               <li class="text-white font-medium">Products</li>
+            </a>
+            <a href="#testimonials" class="nav-link">
+              <li class="text-white font-medium">Testimonials</li>
             </a>
 
               
@@ -426,7 +434,58 @@ import "../../styles/modal.css"
           </div>
         </section>
       </section>
-    </main>
+
+      <section data-aos="fade-up" class="mt-16" id="testimonials">
+        <h2 class="font-Bebas-Neue text-4xl font-bold text-center mb-2 uppercase">
+          Testimonials
+        </h2>
+        <span
+        class="text-center flex justify-center mb-8 text-lg font-Bebas-Neue text-amber-600"
+        >See what people say about us</span
+      >
+        <section class="bg-white dark:bg-gray-900" data-aos="fade-up">
+          <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
+              <figure class="max-w-screen-md mx-auto">
+                  <svg class="h-12 mx-auto mb-3 text-gray-400 dark:text-gray-600" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor"/>
+                  </svg> 
+                  <blockquote>
+                    <p class="text-2xl font-medium text-gray-900 dark:text-white">"I'm absolutely in love with the coffee from this place! The flavors are exquisite, and the aroma is enchanting. Every sip feels like a journey through a world of rich and authentic coffee. It's a must-try for every coffee enthusiast!"</p>
+                  </blockquote>
+                  <figcaption class="flex items-center justify-center mt-6 space-x-3">
+                      <img class="w-6 h-6 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png" alt="profile picture">
+                      <div class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
+                          <div class="pr-3 font-medium text-gray-900 dark:text-white">Micheal Gough</div>
+                          <div class="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">Client</div>
+                      </div>
+                  </figcaption>
+              </figure>
+          </div>
+        </section>
+        <section class="bg-white dark:bg-gray-900" data-aos="fade-up">
+          <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
+              <figure class="max-w-screen-md mx-auto">
+                  <svg class="h-12 mx-auto mb-3 text-gray-400 dark:text-gray-600" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor"/>
+                  </svg> 
+                  <blockquote>
+                    <p class="text-2xl font-medium text-gray-900 dark:text-white">"This coffee is a game-changer! I start my day with their brew, and it sets the perfect tone. The smooth blend and robust flavor make every morning a delight. I've become a loyal customer, and I can't recommend it enough!"</p>
+                  </blockquote>
+                  <figcaption class="flex items-center justify-center mt-6 space-x-3">
+                      <img class="w-6 h-6 rounded-full" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Outdoors-man-portrait_%28cropped%29.jpg/800px-Outdoors-man-portrait_%28cropped%29.jpg" alt="profile picture">
+                      <div class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
+                          <div class="pr-3 font-medium text-gray-900 dark:text-white">Jean Lawrence</div>
+                          <div class="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">Client</div>
+                      </div>
+                  </figcaption>
+              </figure>
+          </div>
+        </section>
+
+
+        </section>
+
+
 
     <section data-aos="fade-up" class="mt-16" id="contact">
       <h2 class="font-Bebas-Neue text-4xl font-bold text-center mb-2 uppercase">
@@ -462,6 +521,7 @@ import "../../styles/modal.css"
         </button>
       </form>
     </section>
+  </main>
 
     <footer
       class="flex justify-center items-center gap-4 bg-amber-600 text-white p-4 mt-16"
